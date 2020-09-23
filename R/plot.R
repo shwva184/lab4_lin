@@ -4,6 +4,8 @@
 #' @param x An object of linereg class
 #' @param ... Further arguments passed to or from other methods
 #' @import ggplot2
+#' @importFrom graphics panel.smooth par text
+#' 
 #' @export
 
 plot.linreg <- function(x,...) 

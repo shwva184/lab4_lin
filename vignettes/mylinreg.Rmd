@@ -49,6 +49,12 @@ The resid method returns the residuals of estimates.
 ```{r}
 resid(linreg_mod)
 ```
+pred()
+The pred method returns the fitted values for the linear model.
+
+```{r}
+pred(linreg_mod)
+```
 
 coef()
 The coef method returns the regression coefficients

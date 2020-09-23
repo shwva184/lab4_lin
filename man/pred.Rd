@@ -2,15 +2,25 @@
 % Please edit documentation in R/pred.R
 \name{pred}
 \alias{pred}
-\title{This contains the fitted values of linreg function.}
+\alias{pred.linreg}
+\title{Generic method for getting the fitted values}
 \usage{
-pred(object, ...)
+pred(p, ...)
+
+\method{pred}{linreg}(p, ...)
 }
 \arguments{
-\item{object}{An object of linreg class}
+\item{p}{An object}
 
 \item{...}{Further arguments passed to or from other methods}
+
+\item{object}{An object of linreg class}
+}
+\value{
+This prints out predicted or fitted values for the object passed.
 }
 \description{
+Generic method for getting the fitted values
+
 This contains the fitted values of linreg function.
 }
