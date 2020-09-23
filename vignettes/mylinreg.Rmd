@@ -1,0 +1,63 @@
+---
+title: "mylinreg"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mylinreg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mylinreg)
+```
+
+# Linear regression
+A linear regression model is computed by using the linreg function, which returns an object for S3 class.The functionality of the package are demonstrated with the "iris" dataset.
+
+```{r}
+linreg_mod <- linreg(Petal.Length~Species, data=iris)
+```
+
+# Methods
+
+print()
+The print method returns the argument and the estimates of the coefficient.
+
+```{r}
+print(linreg_mod)
+```
+
+plot()
+The plot method returns two plots.One plot with Residuals vs Fitted Values and the other one the Square of Standardized residuals vs Fitted values.
+
+```{r}
+plot(linreg_mod)
+```
+
+resid()
+The resid method returns the residuals of estimates.
+
+```{r}
+resid(linreg_mod)
+```
+
+coef()
+The coef method returns the regression coefficients
+
+```{r}
+coef(linreg_mod)
+```
+
+summary
+The summary method returns the overview of the linear regression model.
+
+```{r}
+summary(linreg_mod)
+```
