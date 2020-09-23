@@ -47,13 +47,13 @@ resid()
 The resid method returns the residuals of estimates.
 
 ```{r}
-resid(linreg_mod)
+resid(linreg_mod)[1:10]
 ```
 pred()
 The pred method returns the fitted values for the linear model.
 
 ```{r}
-pred(linreg_mod)
+pred(linreg_mod)[1:10]
 ```
 
 coef()
