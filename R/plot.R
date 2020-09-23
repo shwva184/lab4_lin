@@ -26,4 +26,3 @@ plot.linreg <- function(x,...)
   ix<-which(abs(stdresidual)>4.3*sdres) 
   text(fitted(x)[ix], stdresidual[ix], ix, pos=2)
 }
-
