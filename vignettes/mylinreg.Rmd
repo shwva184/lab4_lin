@@ -39,7 +39,7 @@ print(linreg_mod)
 plot()
 The plot method returns two plots.One plot with Residuals vs Fitted Values and the other one the Square of Standardized residuals vs Fitted values.
 
-```{r}
+```{r, fig.width=6,fig.height=4}
 plot(linreg_mod)
 ```
 
