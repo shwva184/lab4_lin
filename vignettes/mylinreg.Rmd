@@ -1,6 +1,6 @@
 ---
 title: "mylinreg"
-author: "Hoda","Swetha","Suhani"
+author: " Group 10: Hoda ,Swetha,Suhani"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
